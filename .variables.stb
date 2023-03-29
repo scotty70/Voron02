@@ -1,0 +1,4 @@
+[Variables]
+last_file = ''
+was_interrupted = False
+
