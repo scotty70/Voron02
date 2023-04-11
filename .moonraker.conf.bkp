@@ -30,6 +30,11 @@ trusted_clients =
 subscriptions = 
 	mainsail
 
+[power printer]
+type = shelly
+address = 192.168.111.78
+off_when_shutdown = True
+
 [update_manager]
 refresh_interval = 168
 enable_auto_refresh = True
