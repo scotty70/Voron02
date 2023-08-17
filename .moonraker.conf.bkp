@@ -100,3 +100,16 @@ origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
 managed_services = klipper
 primary_branch = main
 
+[update_manager spyglass]
+type = git_repo
+channel = beta
+path = ~/spyglass
+origin = https://github.com/roamingthings/spyglass.git
+managed_services = spyglass
+
+[update_manager Katapult]
+type = git_repo
+path = /home/pi/katapult
+origin = https://github.com/Arksine/katapult.git
+is_system_service = False
+
