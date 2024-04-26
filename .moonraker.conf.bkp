@@ -30,11 +30,6 @@ trusted_clients =
 subscriptions = 
 	mainsail
 
-[power printer]
-type = shelly
-address = 192.168.111.78
-off_when_shutdown = True
-
 [update_manager]
 refresh_interval = 168
 enable_auto_refresh = True
@@ -112,4 +107,14 @@ type = git_repo
 path = /home/pi/katapult
 origin = https://github.com/Arksine/katapult.git
 is_system_service = False
+
+[update_manager Klippain-ShakeTune]
+type = git_repo
+origin = https://github.com/Frix-x/klippain-shaketune.git
+path = ~/klippain_shaketune
+virtualenv = ~/klippain_shaketune-env
+requirements = requirements.txt
+system_dependencies = system-dependencies.json
+primary_branch = main
+managed_services = klipper
 
